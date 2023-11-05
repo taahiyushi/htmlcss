@@ -1,0 +1,438 @@
+body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+nav {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/*---------------------------------------------ヘッダー-----------------------------------------------------*/
+
+.Header {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    
+}
+
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 36px;
+    max-width: 100%;
+    position: relative;
+}
+
+.HeaderLogo {
+    align-self: center;
+}
+
+
+.HeaderLogo__image {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+
+
+.HeaderNavHamburger {
+    display: none;
+}
+
+.HeaderNavList {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.HeaderNavListItem {
+    margin-right: 45px;
+}
+
+.HeaderNavListItem__link>span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.small{
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 3px
+}
+
+.big {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.HeaderNavListItem__button {
+    align-items: center;
+    background-color: #f79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+    height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.About__reskilling-logo>img {
+    width: 158px;
+}
+
+
+/*---------------------------------------------メイン（ファーストビュー）-----------------------------------------------------*/
+.FirstView {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.FirstView__main-image--sp {
+    display: none;
+}
+
+.FirstView__main-image {
+    width: 100%;
+}
+
+.FirstView__container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.FirstViewContent__title {
+    color: #333;
+    font-family: "Lato",sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.FirstViewContent__images {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.FirstViewContent__button:visited {
+    color: #fff;
+}
+
+.FirstViewContent__button {
+    align-items: center;
+    background-color: #f79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.FirstViewCaption {
+    color: #a2a2a4;
+    font-size: 12px;
+}
+
+/*---------------------------------------------メイン（アバウト）-----------------------------------------------------*/
+.AboutWrapper {
+    padding: 120px 0;
+    background-color: #f79214;
+    padding: 44px 0;
+}
+
+.About {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.About__video {
+    width: 50%;
+}
+
+.About__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    margin-left: 32px;
+}
+
+.About__title h2 {
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 54px;
+    margin-bottom: 8px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+}
+
+.About__title p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 24px;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    
+}
+
+
+/*---------------------------------------------レスポンシブ-----------------------------------------------------*/
+@media screen and (max-width: 400px){
+.About__title h2 {
+    font-size: 33px;
+    line-height: 1.4;
+    white-space: pre;
+    word-break: keep-all;
+}
+
+
+    
+}
+
+/*---------------------------------------------レスポンシブ-----------------------------------------------------*/
+
+/*---------------------------------------------レスポンシブ-----------------------------------------------------*/
+
+@media screen and (max-width: 767px){
+.Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+}
+
+
+.HeaderNavList {
+    top: 52px;
+}
+
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+
+.FirstView__main-image--sp {
+    display: block;
+}
+
+.FirstView__container {
+    margin-top: -45vw;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}
+
+.FirstViewContent__images {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+
+.FirstViewContent__button {
+    width: 100% !important;
+}
+
+.AboutWrapper {
+    padding: 30px 0;
+}
+
+.About {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.About__video {
+    width: 100%;
+}
+
+.About__title {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.About__title p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+}
+
+/*---------------------------------------------レスポンシブ-----------------------------------------------------*/
+
+@media screen and (max-width: 1080px){
+
+
+.Header {
+    background-color: #fff;
+    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+
+
+.Header--common {
+    position: fixed !important;
+}
+
+.HeaderNavHamburger {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 100;
+}
+
+.HeaderNavHamburger__line:first-child {
+    top: 0;
+}
+
+.HeaderNavHamburger__line:last-child {
+    top: 100%;
+}
+
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+
+}
+
+.HeaderNavList {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform .5s;
+    z-index: 99;
+    background-color: rgba(0,0,0,.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+.About {
+    flex-direction: column;
+}
+
+.About__video {
+    margin-bottom: 16px;
+    width: 75%;
+}
+
+.About__title {
+    margin-left: 0;
+    width: 75%;
+}
+
+.About__title p {
+    margin-bottom: 32px;
+}
+
+.About__reskilling-logo {
+    margin: auto;
+}
+
+}
